@@ -1,0 +1,24 @@
+import java.util.Arrays;
+import java.util.Scanner;
+public  class LinearSearch{
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter Your Size: ");
+int size=sc.nextInt();
+int [] marks= new int[size];///Size=3
+for(int i=0;i<size;i++){
+marks[i]=sc.nextInt();
+}
+System.out.print("Enter Your Search Element: ");
+int search=sc.nextInt();
+for(int i=0;i<size;i++){
+if(marks[i]==search){
+System.out.println("Successfully,Element is available! ");
+}
+else if(marks[i]!=search){
+System.out.println("No,Element is not Available! ");
+}
+break;
+}
+}
+}
